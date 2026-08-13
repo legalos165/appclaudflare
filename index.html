@@ -14,7 +14,7 @@
 <main><header class="top"><b id="title">Dashboard</b><span id="user"></span> <button id="logout" class="btn secondary">Keluar</button></header><div id="content" class="content"></div></main></section>
 <div id="modal"></div><div id="toast"></div>
 <script>
-const CONFIG={API_URL:"https://script.google.com/macros/s/AKfycbx8oiF08MUXhy0MrWyoUh_EUpcbxbHpP4MFu869RdJpKj8e4WSZbn3EUmH1c1ZtJ92U/exec"};
+const CONFIG={API_URL:"https://script.google.com/macros/s/AKfycbxs6BB6L8QhkVJ6_u4daJv0_TaJYevCd18ejft8dKNwaZdrMc6yQhOFFuvIpdvc4_i-/exec"};
 let SESSION=JSON.parse(sessionStorage.getItem("ylos")||"null");
 const $=s=>document.querySelector(s),esc=x=>String(x??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const money=x=>new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(+x||0);
